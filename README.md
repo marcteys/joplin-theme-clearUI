@@ -6,7 +6,7 @@ Joplin is an open source note taking app. Learn more about [Joplin](http://jopli
 It has been tested on Windows version Joplin Joplin 1.7.11 (prod)
 
 ## Screenshots
-
+![clearUI.PNG](/clearUI.PNG)
 
 ## Install Theme
 - Open the Joplin app
