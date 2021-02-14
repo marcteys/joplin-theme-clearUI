@@ -40,6 +40,7 @@
     --animation-quick: 100ms;
     --animation-slow: 300ms;
     --header-height: 50px;
+    --element-height:35px;
 }
 
 
@@ -123,11 +124,10 @@ a.list-item {
 }
 
 .folders .list-item-container{
-font-size: var(--font-size) !important;
-    line-height: 40px !important;
-    min-height: 40px;
-    background-color: var(--color-main-background) 
-
+    font-size: var(--font-size) !important;
+    line-height: var(--element-height) !important;
+    min-height: var(--element-height);
+    background-color: var(--color-main-background);
 }
 
 .sidebar [class^="icon-"],.sidebar [class*=" icon-"]{
@@ -149,8 +149,6 @@ font-size: var(--font-size) !important;
 {
   background-color: var(--color-background-hover) !important;
 }
-
-
 
 
 
@@ -298,7 +296,7 @@ a.list-item:hover {
 
 .note-list .list-item-container {
     padding: 10px;
-    height: 40px;
+    height: var(--element-height);
 }
 
 .note-list .list-item-container div:before {
@@ -313,8 +311,8 @@ a.list-item:hover {
 .note-list .list-item-container{
     border: none !important;
     z-index: 1;
-    padding:0px;
-    height: 40px;
+    padding: 0px;
+    height: var(--element-height);
     position: relative;
     background-color: var(--color-main-background);
     font-size: var(--default-font-size) !important
@@ -347,13 +345,15 @@ a.list-item:hover {
 }
 
 
-
+.note-list .list-item-container div {
+  background-color: transparent !important;
+}
 
 
 .note-list input[type="checkbox"] {
     opacity: 1 !important;
     padding: 7px 6px;
-  font-size: var(--font-size) !important;
+    font-size: var(--font-size) !important;
     background-color: var(--color-main-background);
     color: var(--color-main-text);
     border: 2px solid transparent;
@@ -371,7 +371,7 @@ a.list-item:hover {
     font-size: 2em;
     opacity: 0.1;
     /* display: none; */
-    outline: 2px solid transparent;
+    outline: 0px solid transparent;
     width: 20px !important;
     height: 20px !important;
     margin-right: 0 !important;
@@ -390,6 +390,9 @@ a.list-item:hover {
     position: absolute;
     top: 11px;
     left: 11px;
+
+        top: calc(var(--element-height)/2 - 14px + 4px); /* 14 = width, 4px = 2 x border-width*/
+    left: calc(var(--element-height)/2 - 14px + 4px);
 }
 
 
@@ -442,7 +445,7 @@ div[height="50"] input {
   margin: 0;
   padding: 0 15px;
   width: 100%;
-  min-height: 40px;
+  min-height: var(--element-height);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -456,11 +459,11 @@ div[height="50"] input {
 /* icon search */
 .rli-noteList > div span[class$="icon-search"] {
   color: var(--icons) !important;
-    min-height: 40px;
+    min-height: var(--element-height);
     margin:0 !important;
 margin-right: 5px !important;
 opacity: .5;
-    height: 40px;
+    height: var(--element-height);
     display: none;
 }
 div[height="50"] button {
@@ -519,9 +522,10 @@ div.resizableLayoutItem iframe {
   opacity: var(--opacity-0-5);
 }
 
-..gkjdjq {
-  border-right: none: 
-}
+.gkjdjq {
+    border-right: 0px solid transparent !important;
+        background-color: var(--color-background-dark) !important;
+  }
 
 
 /* scrollbars */
