@@ -17,8 +17,3 @@ It has been tested on Windows, Joplin version 1.7.11 (prod)
 
 ### Apply Changes
 The css changes won't apply until you close and reopen the app.
-
-## Check to see how it looks.
-You can paste `css-sample.md` into a new Joplin note to see it in action.
-
-- Make sure to select the "Light" Theme in `Joplin > Preferences > Appearances`
