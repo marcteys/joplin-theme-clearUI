@@ -43,6 +43,11 @@
     --element-height:35px;
 }
 
+mark {
+  color: var(--color-main-text);
+    font-weight: bold;
+
+}
 
 
 html, body {
@@ -58,7 +63,9 @@ a {
     font-family: var(--font-face) !important;
 }
 
-
+div, span, a {
+    font-family: var(--font-face);
+}
 /**************************************************************************************************
  *  SIDEBAR
  *************************************************************************************************/
@@ -219,6 +226,9 @@ a.list-item:hover {
     border-radius: 5px;
      margin: 5px 5px;
      min-height: 0px !important;
+    padding-bottom: 3px !important;
+    padding: 10px 3px !important;
+
 }
 
 
@@ -231,8 +241,9 @@ a.list-item:hover {
 }
 .tags .list-item-container a div {
   font-size: 10px !important;
-  line-height: 25px !important;
-  min-height: 0px !important;
+ /* line-height: 20px !important;
+  min-height: 0px !important;*/
+  margin-top: 4px;
 }
 /* Add or remove tag */
 .css-15g31wo,
@@ -271,7 +282,9 @@ a.list-item:hover {
   text-transform: uppercase !important;
 }
 
-
+.sc-fznWOq.krSDAh,.krSDAh  {
+      font-size: 12px !important;
+}
 
 
 
