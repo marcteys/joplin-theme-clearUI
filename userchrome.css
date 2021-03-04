@@ -159,6 +159,11 @@ a.list-item {
 
 
 
+.list-item-container.jQSWcM {
+    background-color: var(--color-background-dark) !important;
+}
+
+
 /* folders */
 .folders > div:first-of-type > a {
   text-transform: uppercase !important;
