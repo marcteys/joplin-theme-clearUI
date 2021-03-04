@@ -201,7 +201,7 @@ a.list-item:hover {
 .css-19qsih1-multiValue,
 .tags a.list-item,
 .tag-list span {
-  background-color: var(--color-background-hover) !important;
+ /* background-color: var(--color-background-hover) !important;*/
   border-radius: var(--border-radius) !important;
   color: var(--default-font-size) !important;
   flex: 0 !important;
@@ -230,7 +230,20 @@ a.list-item:hover {
     padding: 10px 3px !important;
 
 }
+.tags .list-item-container.xOaMI {
+  
+     background: var(--color-background-darker) !important;
 
+}
+
+.tags .list-item-container:hover *
+{
+  background-color: transparent !important;
+}
+
+
+
+ 
 
 .tags .list-item-container:hover {
    background: var(--color-background-dark) !important;
